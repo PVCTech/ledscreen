@@ -46,9 +46,10 @@ button{
     font-size:16px;
     cursor:pointer;
     border-radius:5px;
-    background:white;
+    background:red;
     border:1px solid rgba(0,0,0,0.3);
-    color: rgba(0,0,0,0.8);
+    color: yellow;
+    font-weight:bold;
 }
 
 #ledScreen{
