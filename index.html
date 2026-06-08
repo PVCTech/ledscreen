@@ -2,15 +2,60 @@
 <head>
   <title>LED screen</title>
   <meta name="viewport" content="width=device-width, initial-scale="1.0">
+  <meta charset="UTF-8">
   <link rel="stylesheet" href="index_files/style.css">
 </head>
 <body>
-  <div id="ledScreen" class="ledScreen">
-  </div>
-  <div id="">
-    Background:<br>
-    Color<br>
-    <button id="" class="button">Show Screen</button>
+  <h1>Bảng LED Fullscreen</h1>
+
+  <div class="form-group">
+      <label>Nội dung</label>
+      <textarea id="message">PVC APP XIN CHÀO</textarea>
   </div>
   
+  <div class="row">
+  
+  
+  <div>
+      <label>Màu chữ</label>
+      <input
+          type="color"
+          id="textColor"
+          value="#ffff00">
+  </div>
+  
+  <div>
+      <label>Màu nền</label>
+      <input
+          type="color"
+          id="bgColor"
+          value="#ff0000">
+  </div>
+  
+  <div>
+      <label>Tốc độ</label>
+      <input
+          type="range"
+          id="speed"
+          min="1"
+          max="20"
+          value="4">
+  </div>
+  
+  <div>
+      <button id="startBtn">
+          Chạy Fullscreen
+      </button>
+  </div>
+  
+  </div>
+  
+  <div id="ledScreen">
+  
+  
+  <div id="ledText"></div>
+  
+  <button id="closeBtn">
+      ✕ Đóng
+  </button>
 </body>
