@@ -65,11 +65,9 @@ async function startLed(){
         .value
         .trim();
 
-    if(!text){
-
-        alert("Vui lòng nhập nội dung");
-
-        return;
+    if(!text)
+    { 
+        text = "PVC APP XIN CHÀO";
     }
 
     ledText.textContent = text;
