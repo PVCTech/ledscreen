@@ -60,15 +60,10 @@ function startAnimation(){
 async function startLed(){
 
     const text =
-        document
+        (document
         .getElementById("message")
-        .value
+        .value || "PVC APP XIN CHÀO")
         .trim();
-
-    if(!text)
-    { 
-        text = "PVC APP XIN CHÀO";
-    }
 
     ledText.textContent = text;
 
